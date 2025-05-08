@@ -6,7 +6,7 @@
  *      Fichier de départ pour le projet ActiviteHeritageV2
  * 
  * Auteur 
- *      Maxime Champagne
+ *      i swear its not an addition
  * 
  * Date de création
  *      7 mai 2025
@@ -16,6 +16,7 @@
 #include <Arduino.h>
 #include <iostream>
 #include "Etudiant.h"
+#include "EtudiantArtLettre.h"
 
 //********************************************************************************
 // Déclaration des fonctions
