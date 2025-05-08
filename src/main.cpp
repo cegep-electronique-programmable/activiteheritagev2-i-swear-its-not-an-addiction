@@ -16,6 +16,7 @@
 #include <Arduino.h>
 #include <iostream>
 #include "Etudiant.h"
+#include "EtudiantMusique.h"
 
 //********************************************************************************
 // Déclaration des fonctions
