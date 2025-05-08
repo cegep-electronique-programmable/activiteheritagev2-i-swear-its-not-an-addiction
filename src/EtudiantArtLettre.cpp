@@ -23,10 +23,10 @@ void EtudiantArtLettre::setMatricule(int nouveauMatricule){
     }
 }
 
-int EtudiantArtLettre::getMatricule(void){
-    return (this->numeroMatricule);
+int EtudiantArtLettre::setNbrLivresLus(int nbLivresLus){
+    this->nbrLivresLus= nbLivresLus;
 }
 
 int EtudiantArtLettre::getNbrLivresLus(void){
-    return (this->moyenne);
+    return (this->nbrLivresLus);
 }
