@@ -6,7 +6,7 @@
  *      Fichier de départ pour le projet ActiviteHeritageV2
  * 
  * Auteur 
- *      Maxime Champagne
+ *      Jefu, Tonia, CEEEESA, Markiplier
  * 
  * Date de création
  *      7 mai 2025
@@ -16,6 +16,8 @@
 #include <Arduino.h>
 #include <iostream>
 #include "Etudiant.h"
+
+#include "EtudiantAdmin.h"
 
 //********************************************************************************
 // Déclaration des fonctions
