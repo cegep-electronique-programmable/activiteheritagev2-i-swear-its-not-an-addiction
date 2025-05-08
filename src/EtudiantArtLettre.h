@@ -10,8 +10,11 @@
  *  
  */
 
+
 #ifndef ETUDIANTARTLETTRE_H
 #define ETUDIANTARTLETTRE_H
+
+#include "Etudiant.h"
 
 //Déclaration de la classe EtudiantArtLettre
 class EtudiantArtLettre : public Etudiant {
