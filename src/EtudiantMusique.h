@@ -13,7 +13,7 @@
 #ifndef ETUDIANTMUSIQUE_H
 #define ETUDIANTMUSIQUE_H
 
-class EtudiantMusique : public Etudiant {
+class EtudiantMusique : Etudiant {
     int nbrInstruments;
 	
 public:

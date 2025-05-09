@@ -15,8 +15,10 @@
 
 //Déclaration de la classe Etudiant
 class Etudiant {
-    int numeroMatricule;
     int moyenne;
+    
+protected:
+    int numeroMatricule;
 	
 public:
     void setMatricule(int);
