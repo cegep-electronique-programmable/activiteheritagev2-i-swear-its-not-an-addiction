@@ -65,7 +65,7 @@ void testEtudiant(void) {
 
   Etudiant owen;
   owen.setMatricule(2288053);
-  owen.setMoyenne(99);
+  owen.setMoyenne(80);
 
   numeroMatriculeTmp = owen.getMatricule();
   moyenneTmp = owen.getMoyenne(); 
@@ -74,13 +74,16 @@ void testEtudiant(void) {
 
 void testEtudiantArtLettre(void) {
   int numeroMatriculeTmp;
+  int moyenneTmp;
   int nbrLivresLusTmp;
 
-  Etudiant sonia;
+  EtudiantArtLettre sonia;
   sonia.setMatricule(4280043);
-  sonia.setMoyenne(75);
+  sonia.setMoyenne(99);
+  sonia.setNbrLivresLus(75);
 
   numeroMatriculeTmp = sonia.getMatricule();
-  nbrLivresLusTmp = sonia.getMoyenne(); 
-  printf("Sonia, matricule # %d, nombres de livres lus %d\n", numeroMatriculeTmp, nbrLivresLusTmp);
+  moyenneTmp = sonia.getMoyenne(); 
+  nbrLivresLusTmp= sonia.getNbrLivresLus();
+  printf("Sonia, matricule # %d, moyenne %d, nombres de livres lus %d\n", numeroMatriculeTmp, moyenneTmp, nbrLivresLusTmp);
 }
