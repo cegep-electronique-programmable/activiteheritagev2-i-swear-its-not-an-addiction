@@ -22,7 +22,7 @@
 // Déclaration des fonctions
 //********************************************************************************
 void testEtudiant(void);
-
+void testEtudiantArtLettre(void);
 
 //********************************************************************************
 // Déclartions des variables globales
@@ -39,7 +39,8 @@ void setup() {
 
   pinMode(LED_BUILTIN, OUTPUT);   // DEL embarqué configuré en sortie
 
-  testEtudiant();  
+  testEtudiant();
+  testEtudiantArtLettre();   
 }
 
 
@@ -69,5 +70,17 @@ void testEtudiant(void) {
   numeroMatriculeTmp = owen.getMatricule();
   moyenneTmp = owen.getMoyenne(); 
   printf("Owen, matricule # %d, moyenne %d\n", numeroMatriculeTmp, moyenneTmp);
+}
 
+void testEtudiantArtLettre(void) {
+  int numeroMatriculeTmp;
+  int nbrLivresLusTmp;
+
+  Etudiant sonia;
+  sonia.setMatricule(4280043);
+  sonia.setMoyenne(75);
+
+  numeroMatriculeTmp = sonia.getMatricule();
+  nbrLivresLusTmp = sonia.getMoyenne(); 
+  printf("Sonia, matricule # %d, nombres de livres lus %d\n", numeroMatriculeTmp, nbrLivresLusTmp);
 }
