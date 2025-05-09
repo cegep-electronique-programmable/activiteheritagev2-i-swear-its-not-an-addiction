@@ -23,7 +23,7 @@ void EtudiantArtLettre::setMatricule(int nouveauMatricule){
     }
 }
 
-int EtudiantArtLettre::setNbrLivresLus(int nbLivresLus){
+void EtudiantArtLettre::setNbrLivresLus(int nbLivresLus){
     this->nbrLivresLus= nbLivresLus;
 }
 
