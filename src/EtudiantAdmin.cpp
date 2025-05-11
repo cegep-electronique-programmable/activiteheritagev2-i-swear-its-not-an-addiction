@@ -22,15 +22,12 @@ void EtudiantAdmin::setMatricule(int nouveauMatricule){
     }
 }
 
-void EtudiantAdmin::setcountSession1 (int nouvelleMoyenne){
-    if (nouvelleMoyenne <= 100){
-        this->moyenne = nouvelleMoyenne;
-    }
-    else{
-        this->moyenne = 100;
-    }
+void EtudiantAdmin::setcountSession1(float nbrSessions)
+{
+    this->countSession1 = nbrSessions;
 }
 
-int EtudiantAdmin::getcountSession1(void){
-    return (this->moyenne);
+float EtudiantAdmin::getcountSession1(void)
+{
+    return this->countSession1;
 }

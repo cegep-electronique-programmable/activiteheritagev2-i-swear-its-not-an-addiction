@@ -72,3 +72,17 @@ void testEtudiant(void) {
   printf("Owen, matricule # %d, moyenne %d\n", numeroMatriculeTmp, moyenneTmp);
 
 }
+
+void testEtudiantAdmin(void) 
+{
+  int numeroMatriculeTmp;
+  float nbrSessionTmp;
+
+  EtudiantAdmin Jedi;
+  Jedi.setMatricule(5007007);
+  Jedi.setcountSession1(69);
+
+  numeroMatriculeTmp = Jedi.getMatricule();
+  nbrSessionTmp = Jedi.getcountSession1();
+  printf("Jeff, matricule # %d, nbr de sessions %d\n", numeroMatriculeTmp, nbrSessionTmp);
+}
