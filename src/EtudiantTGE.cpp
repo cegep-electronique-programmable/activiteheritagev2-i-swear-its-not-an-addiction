@@ -11,7 +11,7 @@
  */
 
 #include "EtudiantTGE.h"
-
+#include "Etudiant.h"
 
 //Définition de la méthode setMatricule de la classe, permet de modifier le matricule de l'étudiant
 void EtudiantTGE::setMatricule(int nouveauMatricule){
