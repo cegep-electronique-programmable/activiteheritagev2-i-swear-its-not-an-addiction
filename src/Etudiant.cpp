@@ -12,6 +12,7 @@
 
 #include "Etudiant.h"
 
+
 //Définition de la méthode setMatricule de la classe, permet de modifier le matricule de l'étudiant
 void Etudiant::setMatricule(int nouveauMatricule){
     //Le numero de matricule doit necessairement avoir 7 chiffres
