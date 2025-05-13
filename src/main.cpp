@@ -123,7 +123,7 @@ void testEtudiantMusique(void)
 
   numeroMatriculeTmp = Cesar.getMatricule();
   nbrInstrumentsTmp = Cesar.getNbrInstruments();
-  printf("Jeff, matricule # %d, nbr de sessions %d\n", numeroMatriculeTmp, nbrInstrumentsTmp);
+  printf("Ceesa, matricule # %d, nbr de sessions %d\n", numeroMatriculeTmp, nbrInstrumentsTmp);
 }
 
 void testEtudiantTGE(void)
