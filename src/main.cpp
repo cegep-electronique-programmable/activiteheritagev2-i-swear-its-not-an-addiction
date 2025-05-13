@@ -16,12 +16,13 @@
 #include <Arduino.h>
 #include <iostream>
 #include "Etudiant.h"
+#include "EtudiantTGE.h"
 
 //********************************************************************************
 // Déclaration des fonctions
 //********************************************************************************
 void testEtudiant(void);
-
+void testEtudiantTGE(void);
 
 //********************************************************************************
 // Déclartions des variables globales
@@ -69,4 +70,18 @@ void testEtudiant(void) {
   moyenneTmp = owen.getMoyenne(); 
   printf("Owen, matricule # %d, moyenne %d\n", numeroMatriculeTmp, moyenneTmp);
 
+  void testEtudiantTGE(void)
+  {
+    int numeroMatriculeTmp;
+    bool maitriseOscilloTmp;
+
+    EtudiantTGE Marc;
+    Marc.setMatricule(2228222);
+    Marc.maitriseOscillo(true);
+
+    numeroMatriculeTmp = Marc.getMatricule();
+    maitriseOscilloTmp = Marc.getMaitrise();
+    printf("Marc, matricule # %d, maitrise en binaire: %c\n", numeroMatricule, maitriseOscilloTmp);
+
+  }
 }
