@@ -15,6 +15,8 @@
 
 //Déclaration de la classe Etudiant
 class Etudiant {
+protected:
+    int numeroMatricule;
     int moyenne;
     
 protected:
