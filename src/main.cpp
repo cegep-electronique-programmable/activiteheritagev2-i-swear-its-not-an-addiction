@@ -79,8 +79,6 @@ void testEtudiant(void) {
 }
 
 
-}
-
 void testEtudiantAdmin(void) 
 {
   int numeroMatriculeTmp;
@@ -111,18 +109,16 @@ void testEtudiantArtLettre(void) {
   printf("Sonia, matricule # %d, moyenne %d, nombres de livres lus %d\n", numeroMatriculeTmp, moyenneTmp, nbrLivresLusTmp);
 }
 
-  void testEtudiantTGE(void)
-  {
-    int numeroMatriculeTmp;
-    bool maitriseOscilloTmp;
+void testEtudiantTGE(void)
+{
+  int numeroMatriculeTmp;
+  bool maitriseOscilloTmp;
 
-    EtudiantTGE Marc;
-    Marc.setMatricule(2228222);
-    Marc.maitriseOscillo(true);
+  EtudiantTGE Marc;
+  Marc.setMatricule(2228222);
+  Marc.setMaitriseOscillo(1);
 
-    numeroMatriculeTmp = Marc.getMatricule();
-    maitriseOscilloTmp = Marc.getMaitrise();
-    printf("Marc, matricule # %d, maitrise en binaire: %d\n", numeroMatricule, maitriseOscilloTmp);
-
-  }
+  numeroMatriculeTmp = Marc.getMatricule();
+  maitriseOscilloTmp = Marc.getMaitrise();
+  printf("Marc, matricule # %d, maitrise en binaire: %d\n", numeroMatriculeTmp, maitriseOscilloTmp);
 }
