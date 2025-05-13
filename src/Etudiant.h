@@ -14,8 +14,7 @@
 #define ETUDIANT_H
 
 //Déclaration de la classe Etudiant
-class Etudiant 
-{
+class Etudiant {
 protected:
     int numeroMatricule;
     int moyenne;

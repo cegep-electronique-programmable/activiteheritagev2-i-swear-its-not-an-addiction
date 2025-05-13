@@ -16,6 +16,7 @@
 #include <Arduino.h>
 #include <iostream>
 #include "Etudiant.h"
+#include "EtudiantArtLettre.h"
 
 #include "EtudiantAdmin.h"
 
@@ -23,7 +24,7 @@
 // Déclaration des fonctions
 //********************************************************************************
 void testEtudiant(void);
-
+void testEtudiantArtLettre(void);
 
 //********************************************************************************
 // Déclartions des variables globales
@@ -40,7 +41,8 @@ void setup() {
 
   pinMode(LED_BUILTIN, OUTPUT);   // DEL embarqué configuré en sortie
 
-  testEtudiant();  
+  testEtudiant();
+  testEtudiantArtLettre();   
 }
 
 
@@ -65,11 +67,13 @@ void testEtudiant(void) {
 
   Etudiant owen;
   owen.setMatricule(2288053);
-  owen.setMoyenne(99);
+  owen.setMoyenne(80);
 
   numeroMatriculeTmp = owen.getMatricule();
   moyenneTmp = owen.getMoyenne(); 
   printf("Owen, matricule # %d, moyenne %d\n", numeroMatriculeTmp, moyenneTmp);
+}
+
 
 }
 
@@ -86,3 +90,20 @@ void testEtudiantAdmin(void)
   nbrSessionTmp = Jedi.getcountSession1();
   printf("Jeff, matricule # %d, nbr de sessions %d\n", numeroMatriculeTmp, nbrSessionTmp);
 }
+
+void testEtudiantArtLettre(void) {
+  int numeroMatriculeTmp;
+  int moyenneTmp;
+  int nbrLivresLusTmp;
+
+  EtudiantArtLettre sonia;
+  sonia.setMatricule(4280043);
+  sonia.setMoyenne(99);
+  sonia.setNbrLivresLus(75);
+
+  numeroMatriculeTmp = sonia.getMatricule();
+  moyenneTmp = sonia.getMoyenne(); 
+  nbrLivresLusTmp= sonia.getNbrLivresLus();
+  printf("Sonia, matricule # %d, moyenne %d, nombres de livres lus %d\n", numeroMatriculeTmp, moyenneTmp, nbrLivresLusTmp);
+}
+
