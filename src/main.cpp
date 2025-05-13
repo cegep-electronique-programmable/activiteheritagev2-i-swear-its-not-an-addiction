@@ -22,7 +22,7 @@
 // Déclaration des fonctions
 //********************************************************************************
 void testEtudiant(void);
-
+void testEtudiantMusique(void);
 
 //********************************************************************************
 // Déclartions des variables globales
@@ -70,4 +70,18 @@ void testEtudiant(void) {
   moyenneTmp = owen.getMoyenne(); 
   printf("Owen, matricule # %d, moyenne %d\n", numeroMatriculeTmp, moyenneTmp);
 
+}
+
+void testEtudiantMusique(void) 
+{
+  int numeroMatriculeTmp;
+  int nbrInstrumentsTmp;
+
+  EtudiantMusique Cesar;
+  Cesar.setMatricule(3000069);
+  Cesar.setNbrInstruments(69);
+
+  numeroMatriculeTmp = Cesar.getMatricule();
+  nbrInstrumentsTmp = Cesar.getNbrInstruments();
+  printf("Jeff, matricule # %d, nbr de sessions %d\n", numeroMatriculeTmp, nbrInstrumentsTmp);
 }

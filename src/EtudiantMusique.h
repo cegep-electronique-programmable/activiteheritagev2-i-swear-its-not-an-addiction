@@ -13,7 +13,9 @@
 #ifndef ETUDIANTMUSIQUE_H
 #define ETUDIANTMUSIQUE_H
 
-class EtudiantMusique : Etudiant {
+#include "Etudiant.h"
+
+class EtudiantMusique : public Etudiant {
     int nbrInstruments;
 	
 public:

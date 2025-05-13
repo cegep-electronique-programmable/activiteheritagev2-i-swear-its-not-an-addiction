@@ -10,10 +10,7 @@
  *  
  */
 
-
-
 #include "EtudiantMusique.h"
-#include "Etudiant.h"
 
 //Définition de la méthode setMatricule de la classe, permet de modifier le matricule de l'étudiant
 void EtudiantMusique::setMatricule(int nouveauMatricule){
