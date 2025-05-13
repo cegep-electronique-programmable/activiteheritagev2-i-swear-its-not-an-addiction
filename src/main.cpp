@@ -6,7 +6,7 @@
  *      Fichier de départ pour le projet ActiviteHeritageV2
  * 
  * Auteur 
- *      i swear its not an addition
+ *      Jefu, Tonia, CEEEESA, Markiplier
  * 
  * Date de création
  *      7 mai 2025
@@ -17,6 +17,8 @@
 #include <iostream>
 #include "Etudiant.h"
 #include "EtudiantArtLettre.h"
+
+#include "EtudiantAdmin.h"
 
 //********************************************************************************
 // Déclaration des fonctions
@@ -72,6 +74,23 @@ void testEtudiant(void) {
   printf("Owen, matricule # %d, moyenne %d\n", numeroMatriculeTmp, moyenneTmp);
 }
 
+
+}
+
+void testEtudiantAdmin(void) 
+{
+  int numeroMatriculeTmp;
+  float nbrSessionTmp;
+
+  EtudiantAdmin Jedi;
+  Jedi.setMatricule(5007007);
+  Jedi.setcountSession1(69);
+
+  numeroMatriculeTmp = Jedi.getMatricule();
+  nbrSessionTmp = Jedi.getcountSession1();
+  printf("Jeff, matricule # %d, nbr de sessions %d\n", numeroMatriculeTmp, nbrSessionTmp);
+}
+
 void testEtudiantArtLettre(void) {
   int numeroMatriculeTmp;
   int moyenneTmp;
@@ -87,3 +106,4 @@ void testEtudiantArtLettre(void) {
   nbrLivresLusTmp= sonia.getNbrLivresLus();
   printf("Sonia, matricule # %d, moyenne %d, nombres de livres lus %d\n", numeroMatriculeTmp, moyenneTmp, nbrLivresLusTmp);
 }
+
