@@ -16,6 +16,7 @@
 #include <Arduino.h>
 #include <iostream>
 #include "Etudiant.h"
+#include "EtudiantMusique.h"
 #include "EtudiantTGE.h"
 #include "EtudiantArtLettre.h"
 #include "EtudiantAdmin.h"
@@ -25,10 +26,10 @@
 // Déclaration des fonctions
 //********************************************************************************
 void testEtudiant(void);
+void testEtudiantMusique(void);
 void testEtudiantTGE(void);
 void testEtudiantArtLettre(void);
 void testEtudiantAdmin(void);
-
 
 //********************************************************************************
 // Déclartions des variables globales
@@ -65,7 +66,8 @@ void loop() {
 // fonction testEtudiant permet de créer un étudiant et de valider le 
 // fonctionnement de la classe Etudiant.
 //********************************************************************************
-void testEtudiant(void) {
+void testEtudiant(void)
+{
   int numeroMatriculeTmp;
   int moyenneTmp;
 
@@ -93,7 +95,8 @@ void testEtudiantAdmin(void)
   printf("Jeff, matricule # %d, nbr de sessions %d\n", numeroMatriculeTmp, nbrSessionTmp);
 }
 
-void testEtudiantArtLettre(void) {
+void testEtudiantArtLettre(void) 
+{
   int numeroMatriculeTmp;
   int moyenneTmp;
   int nbrLivresLusTmp;
@@ -107,6 +110,20 @@ void testEtudiantArtLettre(void) {
   moyenneTmp = sonia.getMoyenne(); 
   nbrLivresLusTmp= sonia.getNbrLivresLus();
   printf("Sonia, matricule # %d, moyenne %d, nombres de livres lus %d\n", numeroMatriculeTmp, moyenneTmp, nbrLivresLusTmp);
+}
+
+void testEtudiantMusique(void) 
+{
+  int numeroMatriculeTmp;
+  int nbrInstrumentsTmp;
+
+  EtudiantMusique Cesar;
+  Cesar.setMatricule(3000069);
+  Cesar.setNbrInstruments(69);
+
+  numeroMatriculeTmp = Cesar.getMatricule();
+  nbrInstrumentsTmp = Cesar.getNbrInstruments();
+  printf("Jeff, matricule # %d, nbr de sessions %d\n", numeroMatriculeTmp, nbrInstrumentsTmp);
 }
 
 void testEtudiantTGE(void)

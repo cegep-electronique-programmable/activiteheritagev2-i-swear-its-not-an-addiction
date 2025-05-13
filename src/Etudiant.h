@@ -18,6 +18,9 @@ class Etudiant {
 protected:
     int numeroMatricule;
     int moyenne;
+    
+protected:
+    int numeroMatricule;
 	
 public:
     void setMatricule(int);
